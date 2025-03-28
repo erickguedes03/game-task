@@ -81,6 +81,7 @@ body{
 }
 
 .lista__imagem{
+<<<<<<< Updated upstream
     height: 10em;
 }
 
@@ -109,3 +110,100 @@ body{
     margin: 2em 15vw 3em 15vw;
     align-items: center;
 }
+=======
+    height: 4em;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecalho_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cabecalho__logo {
+    width: 100px; 
+    height: auto; 
+}
+
+.cabecalho__nav {
+    padding: 38px;
+}
+
+.cabecalho__links {
+    display: flex; 
+    gap: 30px;
+    list-style: none; 
+}
+
+.cabecalho__link {
+    text-decoration: none;
+    color: var(--azul)
+}
+
+.footer {
+    background-color: #333;
+    color: var(--amarelo);
+    padding: 20px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer_social,
+.footer_links,
+.footer_copy {
+    flex: 1; 
+    text-align: center;
+    margin: 10px;
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+}
+
+.footer_icon {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer_icon:hover {
+    color: #ffa500;
+    transform: scale(1.1);
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_link {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer_link:hover {
+    color: #ffa500;
+    transform: scale(1.1);
+}
+
+.footer_copy {
+    margin-top: 10px;
+}
+>>>>>>> Stashed changes
