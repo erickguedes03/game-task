@@ -90,13 +90,12 @@ body{
 }
 
 .carrossel__container{
-    margin: 2em 10em;
+    display: flex;
+    margin: 2em 15vw 3em 15vw;
+    align-items: center;
 }
 .carrossel__imagem{
     height: 40em;
-}
-
-.swiper-slide img{
 }
 
 .swiper-pagination{
@@ -104,8 +103,20 @@ body{
     margin: 0.5em 0;
 }
 
-.carrossel__container{
+.links{
+    margin: 10em 0;
     display: flex;
-    margin: 2em 15vw 3em 15vw;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links__titulo{
+    font-size: 1.5em;
+}
+
+.container__links{
+    display: flex;
+    list-style-type: none;
     align-items: center;
+    justify-content: center;
 }
