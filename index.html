@@ -17,10 +17,11 @@
             <img src="assets/i673524.webp" alt="Logo" class="cabecalho__logo">
             <nav class="cabecalho__nav">
                 <ul class="cabecalho__links">
-                    <li><a href="index.html" class="cabecalho__link">INÍCIO</a></li>
-                    <li><a href="sobre.html" class="cabecalho__link">SOBRE</a></li>
-                    <li><a href="download.html" class="cabecalho__link">DOWNLOAD</a></li>
-                    <li><a href="contato.html" class="cabecalho__link">CONTATO</a></li>
+                    <li><a href="#" class="cabecalho__link">INÍCIO</a></li>
+                    <li><a href="#informacoes" class="cabecalho__link">SOBRE</a></li>
+                    <li><a href="#destaques" class="cabecalho__link">DESTAQUES</a></li>
+                    <li><a href="#imagens" class="cabecalho__link">IMAGENS</a></li>
+                    <li><a href="#download" class="cabecalho__link">DOWNLOAD</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +30,7 @@
         <img src="assets/logo.png" alt="logo do jogo" class="imagem__logo">
     </div>
 
-    <section class="informacoes">
+    <section class="informacoes" id="informacoes">
         <div class="informacoes__container">
             <h2 class="container__titulo">INFORMAÇÕES TÉCNICAS</h2>
             <p class="container__texto"><b class="container__bold">Plataforma:  </b> Mobile (iOS, Android, iPadOS)</p>
@@ -39,7 +40,7 @@
         </div>
     </section>
 
-    <section class="destaques">
+    <section class="destaques" id="destaques">
         <h2 class="container__titulo">DESTAQUES DO JOGO</h2>
         <ul class="destaques__lista">
             <div class="container__lista">
@@ -74,19 +75,15 @@
         </ul>
     </section>
 
-    <section class="imagens">
+    <section id="imagens" class="imagens">
         <h2 class="container__titulo">GALERIA DE IMAGENS</h2>
         <p class="imagens__texto">Aprecie algumas imagens do universo de Clash Royale e veja de perto toda a ação que aguarda você!</p>
         
         <div class="carrossel__container">
-            <!-- Slider main container -->
             <div class="swiper">
 
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide"><img src="assets/img1.jpeg" alt="Imagem do jogo" class="carrossel__imagem"></div>
                 <div class="swiper-slide"><img src="assets/img5.jpeg" alt="Imagem do jogo" class="carrossel__imagem"></div>
                 <div class="swiper-slide"><img src="assets/img3.jpeg" alt="Imagem do jogo" class="carrossel__imagem"></div>
@@ -96,14 +93,33 @@
 
                 </div>
             
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             
             </div>
         </div>
     </section>
+    <section class="links" id="download">
+        <h3 class="links__titulo">Está pronto para se tornar o próximo grande estrategista? Baixe agora e entre na arena!</h3>
+        <ul class="links__lista">
+            <div class="container__links">
+                <li>
+                    <a href="#">
+                        <img src="assets/playstore.png" alt="Link para a playstore" style="height: 10em;">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/appstore.png" alt="Link para a appstore" style="height: 7.5em;">
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </section>
 
+    <footer class="footer">
+            <p class="footer__texto">Criado por Erick Guedes e Lucas Melo – Obrigado por visitar nosso portfólio! Esperamos que tenha gostado.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -121,25 +137,6 @@
        }
          });
     </script>
-    <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_social">
-                <a href="#" class="footer_icon">Facebook</a>
-                <a href="#" class="footer_icon">Twitter</a>
-                <a href="#" class="footer_icon">Instagram</a>
-                <a href="#" class="footer_icon">YouTube</a>
-            </div>
-            <div class="footer_copy">
-                <p>Obrigado por visitar nosso portfólio</p>
-            </div>
-            <div class="footer_links">
-                <a href="#" class="footer_link">Termos de Serviço</a>
-                <a href="#" class="footer_link">Política de Privacidade</a>
-                <a href="#" class="footer_link">Guia dos Pais</a>
-                <a href="#" class="footer_link">Outros Jogos</a>
-                <a href="#" class="footer_link">Contato</a>
-            </div>
-        </div>
-    </footer>
+    
 </body>
 </html>
