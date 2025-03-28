@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --amarelo: #EC992B;
+    --azul: #4276CB;
+    --fonte-titulo: "Bebas Neue", sans-serif;
+    --fonte-texto: "IBM Plex Mono", monospace;
+}
+
+body{
+    background-color: black;
+    color: var(--amarelo);
+    font-family: var(--fonte-texto);
+}
+
+.container__logo{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem__logo{
+    height: 15em;
+}
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+}
+
+.informacoes__container{
+    margin: 2em 30em;
+}
+
+.container__titulo{
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 2.5em;
+    padding: 1em;
+}
+
+.container__texto{
+    padding-bottom: 0.3em;
+}
+
+.container__bold{
+    color: var(--azul);
+    font-size: 1.2em;
+}
