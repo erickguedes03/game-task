@@ -6,13 +6,14 @@
 :root{
     --amarelo: #EC992B;
     --azul: #4276CB;
-    --fonte-titulo: "Bebas Neue", sans-serif;
+    --branco: #f1f3fd;
+    --fonte-titulo: "Boldonse";
     --fonte-texto: "IBM Plex Mono", monospace;
 }
 
 body{
     background-color: black;
-    color: var(--amarelo);
+    color: var(--azul);
     font-family: var(--fonte-texto);
 }
 
@@ -37,8 +38,9 @@ body{
 .container__titulo{
     font-family: var(--fonte-titulo);
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.6em;
     padding: 1em;
+    color: var(--amarelo);
 }
 
 .container__texto{
@@ -46,6 +48,28 @@ body{
 }
 
 .container__bold{
-    color: var(--azul);
-    font-size: 1.2em;
+    font-family: var(--fonte-titulo);
+    color: var(--amarelo);
+    font-size: 0.9em;
+}
+
+.destaques{
+    justify-content: center;
+}
+
+.destaques__lista{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em;
+}
+
+.lista__item{
+    margin: 2em;
+}
+
+.lista__imagem{
+    height: 4em;
 }
