@@ -32,7 +32,7 @@ body{
 }
 
 .informacoes__container{
-    margin: 2em 30em;
+    margin: 2em 30em 10em 30em;
 }
 
 .container__titulo{
@@ -81,7 +81,6 @@ body{
 }
 
 .lista__imagem{
-<<<<<<< Updated upstream
     height: 10em;
 }
 
@@ -91,13 +90,12 @@ body{
 }
 
 .carrossel__container{
-    margin: 2em 10em;
+    display: flex;
+    margin: 2em 15vw 3em 15vw;
+    align-items: center;
 }
 .carrossel__imagem{
     height: 40em;
-}
-
-.swiper-slide img{
 }
 
 .swiper-pagination{
@@ -105,13 +103,22 @@ body{
     margin: 0.5em 0;
 }
 
-.carrossel__container{
+.links{
+    margin: 10em 0;
     display: flex;
-    margin: 2em 15vw 3em 15vw;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
-=======
-    height: 4em;
+
+.links__titulo{
+    font-size: 1.5em;
+}
+
+.container__links{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .cabecalho {
@@ -147,63 +154,12 @@ body{
 }
 
 .footer {
-    background-color: #333;
+    border-top: 1px solid var(--azul);
     color: var(--amarelo);
     padding: 20px;
 }
 
-.footer_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer_social,
-.footer_links,
-.footer_copy {
-    flex: 1; 
+.footer__texto{
+    color: var(--azul);
     text-align: center;
-    margin: 10px;
 }
-
-.footer_social {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;     
-}
-
-.footer_icon {
-    color: white;
-    text-decoration: none;
-    margin: 5px 0; 
-    transition: color 0.3s, transform 0.3s;
-}
-
-.footer_icon:hover {
-    color: #ffa500;
-    transform: scale(1.1);
-}
-
-.footer_links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer_link {
-    color: white;
-    text-decoration: none;
-    margin: 5px 0;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.footer_link:hover {
-    color: #ffa500;
-    transform: scale(1.1);
-}
-
-.footer_copy {
-    margin-top: 10px;
-}
->>>>>>> Stashed changes
