@@ -81,7 +81,6 @@ body{
 }
 
 .lista__imagem{
-<<<<<<< Updated upstream
     height: 10em;
 }
 
@@ -110,10 +109,6 @@ body{
     margin: 2em 15vw 3em 15vw;
     align-items: center;
 }
-=======
-    height: 4em;
-}
-
 .cabecalho {
     display: flex;
     align-items: center;
@@ -206,4 +201,3 @@ body{
 .footer_copy {
     margin-top: 10px;
 }
->>>>>>> Stashed changes
