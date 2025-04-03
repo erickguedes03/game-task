@@ -1,63 +1,147 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --amarelo: #EC992B;
     --azul: #4276CB;
-    --branco: #f1f3fd;
+    --branco: #f1f3fdb0;
     --fonte-titulo: "Boldonse";
     --fonte-texto: "IBM Plex Mono", monospace;
 }
 
-body{
-    background-color: black;
+body.dark-mode {
+    --amarelo: #EC992B;
+    --azul: #00aaff; 
+    --branco: #121212; 
+}
+
+body {
+    background-color: var(--branco);
     color: var(--azul);
     font-family: var(--fonte-texto);
 }
 
-.container__logo{
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-input, .form-textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.btnToggleMode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s ease; 
+    padding: 15px 30px; 
+}
+
+.btnToggleMode:hover {
+    transform: scale(1.1); 
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    transition: color 0.3s ease;
+}
+
+#toggleButton {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer; 
+    background-color: transparent; 
+    border-radius: 5px; 
+}
+
+#toggleButton:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.container__logo {
     display: flex;
     justify-content: center;
 }
 
-.imagem__logo{
+.imagem__logo {
     height: 15em;
 }
 
-.informacoes{
+.informacoes {
     display: flex;
     justify-content: center;
 }
 
-.informacoes__container{
+.informacoes__container {
     margin: 2em 30em 10em 30em;
 }
 
-.container__titulo{
+.container__titulo {
     font-family: var(--fonte-titulo);
     text-align: center;
     font-size: 1.6em;
-    padding-top:3em;
+    padding-top: 3em;
     color: var(--amarelo);
 }
 
-.container__texto{
+.container__texto {
     padding-bottom: 0.3em;
 }
 
-.container__bold{
+.container__bold {
     font-family: var(--fonte-titulo);
     color: var(--amarelo);
     font-size: 0.9em;
 }
 
-.destaques{
+.destaques {
     justify-content: center;
 }
 
-.destaques__lista{
+.destaques__lista {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -66,62 +150,62 @@ body{
     margin: 0 3em;
 }
 
-.container__lista{
+.container__lista {
     display: flex;
 }
 
-.lista__item{
+.lista__item {
     margin: 2em 4em;
     transition: transform 0.3s;
     cursor: pointer;
 }
 
-.lista__titulo{
+.lista__titulo {
     text-transform: uppercase;
     font-size: 1em;
     font-family: var(--fonte-titulo);
 }
 
-.lista__imagem{
+.lista__imagem {
     height: 10em;
 }
-.lista__item:hover{
-    transform: scale(1.25); /* Aumenta o tamanho do item em 5% */
-    
+
+.lista__item:hover {
+    transform: scale(1.25);
 }
 
-.imagens__texto{
+.imagens__texto {
     text-align: center;
     margin-top: 1em;
 }
 
-.carrossel__container{
+.carrossel__container {
     display: flex;
     margin: 2em 15vw 3em 15vw;
     align-items: center;
 }
-.carrossel__imagem{
+
+.carrossel__imagem {
     height: 40em;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     position: initial;
     margin: 0.5em 0;
 }
 
-.links{
-    margin: 10em 0;
+.links {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.links__titulo{
+.links__titulo {
     font-size: 1.5em;
     text-align: center;
 }
 
-.container__links{
+.container__links {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -155,21 +239,23 @@ body{
     list-style: none; 
     transition: transform 0.9s;
 }
+
 .cabecalho__link:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do link em 10% */
+    transform: scale(1.1);
 }
 
 .cabecalho__link {
     text-decoration: none;
-    color: var(--azul)
+    color: var(--azul);
 }
+
 .footer {
     border-top: 1px solid var(--azul);
     color: var(--amarelo);
     padding: 20px;
 }
 
-.footer__texto{
+.footer__texto {
     color: var(--azul);
     text-align: center;
 }
