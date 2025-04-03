@@ -47,10 +47,9 @@ function toggleInfoSection() {
 }
 
 document.getElementById('contatoForm').onsubmit = function(event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
-    alert("Mensagem enviada com sucesso!"); // Alerta de sucesso
+    event.preventDefault(); 
+    alert("Mensagem enviada com sucesso!");
     
-    // Recarrega a página após 2 segundos
     setTimeout(function() {
         location.reload();
     }, 2000);
