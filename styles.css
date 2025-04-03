@@ -3,16 +3,47 @@
     padding: 0;
 }
 
-:root{
+:root {
     --amarelo: #EC992B;
     --azul: #4276CB;
-    --branco: #f1f3fd;
+    --branco: #f1f3fdb0;
     --fonte-titulo: "Boldonse";
     --fonte-texto: "IBM Plex Mono", monospace;
 }
 
-body{
-    background-color: black;
+
+body.dark-mode {
+    --amarelo: #EC992B;
+    --azul: #00aaff; 
+    --branco: #121212; 
+    --fonte-titulo: "Boldonse";
+    --fonte-texto: "IBM Plex Mono", monospace;
+}
+
+.btnToggleMode{
+background-color: var(--azul); 
+    color: white;
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 1em;  
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    font-family: var(--fonte-texto);  
+}
+
+.btnToggleMode:hover {
+    background-color: var(--amarelo); 
+    transform: scale(1.1);  
+}
+
+.btnToggleMode:focus {
+    outline: none;  
+    box-shadow: 0 0 0 2px var(--amarelo);
+}
+
+body {
+    background-color: var(--branco);
     color: var(--azul);
     font-family: var(--fonte-texto);
 }
